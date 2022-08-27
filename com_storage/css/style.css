@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  padding: 15px;
+  /*border: 1px solid #afadad;*/
+}
+
+.btn {
+  border: none;
+  font-size: 2rem;
+  color: white;
+  padding: 15px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+header input {
+  width: 100%;
+  padding: 10px;
+  border: #afadad 1px solid;
+  font-size: 2rem;
+}
+
+header .btn {
+  background-color: #65aa20;
+  border-radius: 5px;
+}
+
+main {
+  margin-top: 50px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 15px 5px;
+  height: 80px;
+  color: black;
+  border: #afadad 1px solid;
+  margin-bottom: 15px;
+  gap: 5px;
+}
+
+.item-icon {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+  font-size: 2rem;
+}
+
+.item-text {
+  flex: 4;
+}
+
+.item-button {
+  flex: 3;
+}
+
+.item-buttons button {
+  text-align: center;
+  flex: 1;
+  background-color: #a52c2c;
+}
+
+.item.checked {
+  background-color: #e3f5d1;
+  color: #afadad;
+}
+
+.item.checked > i {
+  color: #65aa20;
+}
+
+.item.checked p {
+  text-decoration: line-through;
+}
+
+.invisivel {
+  display: none;
+}
