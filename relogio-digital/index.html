@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Relógio Digital</title>
+  </head>
+  <body>
+    <div class="relogio">
+      <div class="container">
+        <h2>RELÓGIO</h2>
+        <div class="mostrar">
+          <span id="relogio-hora">00</span>
+          <span id="relogio-minutos">00</span>
+          <span id="relogio-segundos">00</span>
+        </div>
+      </div>
+    </div>
+    <div class="cronometro">
+      <div class="container">
+        <h2>CRONÔMETRO</h2>
+        <div class="mostrar">
+          <span id="cronometro-minutos">00</span>
+          <span id="cronometro-segundos">00</span>
+        </div>
+        <div class="botoes">
+          <button class="btn" id="cron-iniciar">Iniciar</button>
+          <button class="btn" id="cron-parar" disabled="disabled">Parar</button>
+          <button class="btn" id="cron-zerar" disabled="disabled">Zerar</button>
+        </div>
+      </div>
+    </div>
+    <div class="regressiva">
+      <div class="container">
+        <h2>CONTAGEM REGRESSIVA</h2>
+        <div class="mostrar">
+          <span id="regressiva">00:00</span>
+        </div>
+        <input type="number" class="regressiva-tempo" id="tempo-minutos" placeholder="Tempo em Minutos" required/>
+        <div class="botoes">
+          <button class="btn" id="regressiva-iniciar">Iniciar</button>
+          <button class="btn" id="regressiva-parar" disabled="disabled">Parar</button>
+          <button class="btn" id="regressiva-zerar" disabled="disabled">Zerar</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Receitas e Despesas</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Controle Financeiro</h1>
+        </div>
+    </header>
+    <section class="section1">
+        <div class="container">
+            <div class="content__box">
+                <h2>ENTRADAS <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
+                <p class="valor__entrada"></p>
+            </div>
+            <div class="content__box">
+                <h2>SAÍDAS <i class="fa fa-arrow-down" aria-hidden="true"></i></h2>
+                <p class="valor__saida"></p>
+            </div>
+            <div class="content__box">
+                <h2>SALDO <i class="fas fa-dollar-sign" aria-hidden="true"></i></h2>
+                <p class="valor__saldo"></p>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="container">
+            <div class="form">
+                <input type="text" name="entrada__descricao" id="entrada__descricao" placeholder="Descrição">
+                <input type="text" name="entrada__valor" id="entrada__valor" placeholder="Valor">
+                <select name="entrada__tipo" id="entrada__tipo">
+                    <option value="" selected disabled>Escolha o Tipo</option>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <button id="btn__criar" type="submit">Add</button>
+            </div>
+            <table class="saida__registros">
+            </table>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>

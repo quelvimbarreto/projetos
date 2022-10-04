@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>GERADOR LOTERIAS</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>GERADOR LOTERIAS</h1>
+      </div>
+    </header>
+    <main id="conteudo">
+      <div class="container">
+        <section class="escolha">
+          <select name="loteria" id="loteria" class="escolha__select">
+            <option value="megasena">MEGASENA</option>
+            <option value="lotofacil">LOTOFÁCIL</option>
+          </select>
+        </section>
+        <section class="gerador">
+          <h2 class="gerador__titulo">MEGASENA</h2>
+          <ul class="gerador__lista"></ul>
+          <button type="submit" id="gerar">Gerar Jogo</button>
+        </section>
+        <section class="historico">
+          <h2>HISTÓRICO</h2>
+          <ul class="historico__jogos"></ul>
+          <button type="submit" id="limpar">Limpar</button>
+        </section>
+      </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

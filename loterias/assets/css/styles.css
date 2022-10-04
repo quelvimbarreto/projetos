@@ -1,0 +1,173 @@
+:root {
+  --cor-fundo: #1591b3;
+  --cor-borda: #858484;
+}
+
+@font-face {
+  font-family: "futura";
+  src: url("../fonts/futura.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "futura";
+  background-image: linear-gradient(#0065b7, #1591b3);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  height: 100%;
+  max-width: 395px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 16px 60px;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+header {
+  color: #ffffff;
+}
+header .container h1 {
+  margin: 50px 0 25px 0;
+  font-weight: bold;
+}
+
+main .container .escolha {
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+main .container .escolha .escolha__select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 70%;
+  padding: 8px;
+}
+main .container .escolha .escolha__select:hover {
+  border: 1px solid var(--cor-borda);
+}
+main .container .escolha .escolha__select:focus {
+  border: 1px solid var(--cor-borda);
+  box-shadow: 0 3px 5px 0;
+}
+main .container .escolha .escolha__select option {
+  padding: 8px;
+}
+main .container .gerador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding: 16px;
+  border-radius: 5px;
+  border: var(--cor-borda) 1px solid;
+  background-color: #ffffff;
+  width: 100%;
+  gap: 16px;
+}
+main .container .gerador h2 {
+  font-size: 1.6rem;
+  margin-bottom: 16px;
+  color: #209869;
+}
+main .container .gerador button {
+  font-size: 1em;
+  background-color: #209869;
+}
+main .container .gerador button:hover {
+  border: 1px solid var(--cor-borda);
+}
+main .container .gerador .gerador__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+main .container .gerador .gerador__lista .gerador__lista__numero {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1;
+  padding: 16px;
+  border-radius: 50%;
+  background-image: radial-gradient(#FFAE24 80%, #fcc669);
+}
+main .container .gerador .gerador__lista .gerador__lista__numero:not(:last-child) {
+  margin-right: 10px;
+}
+main .container .historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 5px;
+  border: var(--cor-borda) 1px solid;
+  background-color: #ffffff;
+  padding: 16px;
+  gap: 10px;
+}
+main .container .historico h2 {
+  margin-bottom: 16px;
+  color: #181;
+}
+main .container .historico .historico__jogos {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 16px;
+  gap: 10px;
+}
+main .container .historico .historico__jogos .numeros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+main .container .historico .historico__jogos .numeros::after {
+  content: "";
+  display: block;
+  background-color: var(--cor-fundo);
+  width: 100%;
+  height: 1px;
+}
+main .container .historico .historico__jogos .numeros li {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #181;
+}
+main .container .historico button {
+  background-color: #a7260f;
+}/*# sourceMappingURL=styles.css.map */

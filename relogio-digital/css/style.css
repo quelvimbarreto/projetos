@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Digital;
+  src: url("./DS-DIGIB.TTF");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+span {
+  font-size: 5rem;
+  flex: 1;
+  text-align: center;
+  font-family: Digital;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.relogio {
+  background-color: #eeee;
+}
+
+.cronometro {
+  background-color: black;
+  color: white;
+}
+
+.mostrar {
+  width: 100%;
+  border: 1px #c7c4c4 solid;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  height: 80px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: white;
+}
+
+.btn:disabled {
+  background-color: black;
+  color: rgba(36, 33, 33, 0.933);
+}
+
+.regressiva{
+  margin-top: 15px;
+  background-color: #eeee;
+
+}
+
+.regressiva-tempo{
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  width: 70%;
+}

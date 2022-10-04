@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(221, 255, 244);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  padding: 16px;
+}
+
+header {
+  background-color: rgb(73, 202, 159);
+}
+header .container {
+  justify-content: center;
+  height: 80px;
+}
+header .container h1 {
+  color: white;
+}
+
+.section1 {
+  margin-top: 16px;
+}
+.section1 .container {
+  justify-content: center;
+  background-color: rgb(188, 248, 228);
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.section1 .container .content__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: azure;
+  border-radius: 10px;
+  padding: 8px;
+  flex: 1;
+}
+.section1 .container .content__box p {
+  font-size: 22px;
+  font-weight: bold;
+}
+.section1 .container .content__box:nth-child(1) i, .section1 .container .content__box:nth-child(1) p {
+  color: green;
+}
+.section1 .container .content__box:nth-child(2) i, .section1 .container .content__box:nth-child(2) p {
+  color: rgb(187, 42, 42);
+}
+
+.section2 {
+  margin-top: 16px;
+}
+.section2 .container {
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(188, 248, 228);
+}
+.section2 .container .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.section2 .container .form input {
+  width: 100%;
+  padding: 8px;
+}
+.section2 .container .form button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: rgb(73, 202, 159);
+  color: white;
+}
+.section2 .container .form select,
+.section2 .container .form option {
+  padding: 8px;
+}
+.section2 .container .saida__registros {
+  margin-top: 16px;
+}
+.section2 .container .saida__registros tr {
+  margin-bottom: 8px;
+}
+.section2 .container .saida__registros td {
+  padding: 8px;
+}
+.section2 .container .saida__registros tr:nth-child(even) {
+  background-color: rgb(221, 255, 244);
+}
+.section2 .container .saida__registros td:not(:first-child) {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
