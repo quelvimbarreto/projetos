@@ -1,6 +1,7 @@
-# to-do-list
+# PROJETOS EM JAVASCRIPT
 
-Sistema de Lista de tarefas em JAVASCRIPT em duas versões:
 
-1. [Sem persistencia de dados](https://quelvimbarreto.github.io/to-do-list/sem_storage/);
-2. [Com persistencia de dados (localStorage)](https://quelvimbarreto.github.io/to-do-list/com_storage/);
+1. [CONTROLE FINANCEIRO](https://quelvimbarreto.github.io/projetos/controle_financeiro/);
+2. [LOTERIAS](https://quelvimbarreto.github.io/projetos/loterias/);
+3. [RELÓGIO DIGITAL](https://quelvimbarreto.github.io/projetos/relogio-digital/);
+4. [TO-DO LIST](https://quelvimbarreto.github.io/projetos/to-do-list/);
